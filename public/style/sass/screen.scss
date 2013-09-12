@@ -64,7 +64,10 @@ html, body{
 
 	header{
 		position:relative;
-
+		@media (max-width: 799px) {
+			text-align:center;
+		}
+	
 		a#logo{
 			display:inline-block;
 			position:relative;
@@ -73,6 +76,9 @@ html, body{
 			max-width:400px;
 			img{
 				width:100%;
+			}
+			@media (max-width: 799px){
+				left:0px;
 			}
 		}
 
@@ -93,6 +99,16 @@ html, body{
 					}
 				}
 			}
+
+			@media (max-width: 799px){
+				position:relative;
+				top:0;
+				left:0;
+
+				li{
+					margin: 20px 10px;
+				}
+			}
 		}
 	}
 
@@ -105,6 +121,11 @@ html, body{
 			a{
 				font-weight:bold;
 			}
+		}
+
+		@media (max-width: 799px) {
+			text-align:center;
+			padding: 40px 0;
 		}
 	}
 
@@ -142,6 +163,13 @@ html, body{
 						color: #249CFF;
 					}
 				}
+
+				@media (max-width: 799px) {
+					width:80%;
+					margin: 20px 10%;
+					padding:0;
+					text-align:left;
+				}
 			}
 			img{
 				width:55%;
@@ -149,7 +177,31 @@ html, body{
 				border: 1px solid #aaa;
 				@include border-radius(3px);
 				@include box-shadow(0px 20px 5px -15px rgba(0, 0, 0, 0.3));
+
+				@media (max-width: 799px) {
+					width:100%;
+				}
 			}
+		}
+
+		@media (max-width: 799px) {
+			text-align:center;
+		}
+	}
+
+	section#contact{
+		text-align:center;
+		margin-bottom: 100px;
+
+		a{
+			display: inline-block;
+			margin: 20px 10%;
+			@include display;
+			font-size:3em;
+		}
+
+		@media (max-width: 799px) {
+			text-align:center;
 		}
 	}
 }

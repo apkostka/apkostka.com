@@ -417,7 +417,13 @@ html div.container, body div.container {
 html header, body header {
   position: relative;
 }
-/* line 68, sass/screen.scss */
+@media (max-width: 799px) {
+  /* line 65, sass/screen.scss */
+  html header, body header {
+    text-align: center;
+  }
+}
+/* line 71, sass/screen.scss */
 html header a#logo, body header a#logo {
   display: inline-block;
   position: relative;
@@ -425,11 +431,17 @@ html header a#logo, body header a#logo {
   width: 100%;
   max-width: 400px;
 }
-/* line 74, sass/screen.scss */
+/* line 77, sass/screen.scss */
 html header a#logo img, body header a#logo img {
   width: 100%;
 }
-/* line 79, sass/screen.scss */
+@media (max-width: 799px) {
+  /* line 71, sass/screen.scss */
+  html header a#logo, body header a#logo {
+    left: 0px;
+  }
+}
+/* line 85, sass/screen.scss */
 html header ul, body header ul {
   margin: 0;
   padding: 0;
@@ -447,72 +459,100 @@ html header ul li, body header ul li {
   display: inline-block;
   list-style: none inside;
 }
-/* line 88, sass/screen.scss */
+/* line 94, sass/screen.scss */
 html header ul li, body header ul li {
   margin-left: 20px;
 }
-/* line 91, sass/screen.scss */
+/* line 97, sass/screen.scss */
 html header ul li a:hover, body header ul li a:hover {
   color: #249CFF;
 }
-/* line 99, sass/screen.scss */
+@media (max-width: 799px) {
+  /* line 85, sass/screen.scss */
+  html header ul, body header ul {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* line 108, sass/screen.scss */
+  html header ul li, body header ul li {
+    margin: 20px 10px;
+  }
+}
+/* line 115, sass/screen.scss */
 html section#about, body section#about {
   padding: 80px 0;
   border-bottom: 1px solid #ccc;
 }
-/* line 102, sass/screen.scss */
+/* line 118, sass/screen.scss */
 html section#about p, body section#about p {
   font-size: 1.5em;
   margin: 0;
 }
-/* line 105, sass/screen.scss */
+/* line 121, sass/screen.scss */
 html section#about p a, body section#about p a {
   font-weight: bold;
 }
-/* line 111, sass/screen.scss */
+@media (max-width: 799px) {
+  /* line 115, sass/screen.scss */
+  html section#about, body section#about {
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+/* line 132, sass/screen.scss */
 html section#projects, body section#projects {
   padding: 80px 0;
 }
-/* line 114, sass/screen.scss */
+/* line 135, sass/screen.scss */
 html section#projects h1, body section#projects h1 {
   margin: 0;
 }
-/* line 118, sass/screen.scss */
+/* line 139, sass/screen.scss */
 html section#projects article, body section#projects article {
   padding: 40px 0;
   border-bottom: 1px solid #ccc;
   font-size: 0.9em;
 }
-/* line 123, sass/screen.scss */
+/* line 144, sass/screen.scss */
 html section#projects article div.desc, body section#projects article div.desc {
   float: left;
   width: 45%;
   padding-right: 40px;
 }
-/* line 127, sass/screen.scss */
+/* line 148, sass/screen.scss */
 html section#projects article div.desc p, body section#projects article div.desc p {
   margin: 20px 0;
 }
-/* line 130, sass/screen.scss */
+/* line 151, sass/screen.scss */
 html section#projects article div.desc h3, body section#projects article div.desc h3 {
   font-size: 1.25em;
   margin-bottom: 10px;
 }
-/* line 134, sass/screen.scss */
+/* line 155, sass/screen.scss */
 html section#projects article div.desc ul, body section#projects article div.desc ul {
   margin: 0 0 20px 0;
   padding: 0;
   list-style: disc inside;
 }
-/* line 139, sass/screen.scss */
+/* line 160, sass/screen.scss */
 html section#projects article div.desc a, body section#projects article div.desc a {
   font-weight: bold;
 }
-/* line 141, sass/screen.scss */
+/* line 162, sass/screen.scss */
 html section#projects article div.desc a:hover, body section#projects article div.desc a:hover {
   color: #249CFF;
 }
-/* line 146, sass/screen.scss */
+@media (max-width: 799px) {
+  /* line 144, sass/screen.scss */
+  html section#projects article div.desc, body section#projects article div.desc {
+    width: 80%;
+    margin: 20px 10%;
+    padding: 0;
+    text-align: left;
+  }
+}
+/* line 174, sass/screen.scss */
 html section#projects article img, body section#projects article img {
   width: 55%;
   max-width: 515px;
@@ -525,4 +565,36 @@ html section#projects article img, body section#projects article img {
   -webkit-box-shadow: 0px 20px 5px -15px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 20px 5px -15px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 20px 5px -15px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 799px) {
+  /* line 174, sass/screen.scss */
+  html section#projects article img, body section#projects article img {
+    width: 100%;
+  }
+}
+@media (max-width: 799px) {
+  /* line 132, sass/screen.scss */
+  html section#projects, body section#projects {
+    text-align: center;
+  }
+}
+/* line 192, sass/screen.scss */
+html section#contact, body section#contact {
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 196, sass/screen.scss */
+html section#contact a, body section#contact a {
+  display: inline-block;
+  margin: 20px 10%;
+  font-family: 'Pathway Gothic One', 'Bebas Regular', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3em;
+}
+@media (max-width: 799px) {
+  /* line 192, sass/screen.scss */
+  html section#contact, body section#contact {
+    text-align: center;
+  }
 }
