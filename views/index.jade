@@ -1,0 +1,40 @@
+doctype 5
+html
+  head
+    meta(http-equiv='X-UA-Compatible',content='IE=edge,chrome=1')
+    title Andrew P. Kostka, Web Application Developer
+    meta(name='description', content='Andrew P. Kostka wants to build your web application using Javascript, Ruby, HTML5, and CSS3.')
+    meta(name='author',content='Andrew Kostka, apkostka@gmail.com')
+    link(rel='stylesheet',href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One')
+    link(rel='stylesheet', href='/style/screen.css')
+  body
+    div(class='container')
+      header
+        nav
+          a(href="/",title="home",id='logo')
+            img(src='/img/logo.png',alt='Andrew P. Kostka, Web Applciation Developer',title='Andrew P. Kostka, Web Applciation Developer')
+          ul
+            li
+              a(href='#about',title='About Andrew P. Kostka') About
+            li
+              a(href='#projects',title="Andrew P. Kostka's Projects") Projects
+            li
+              a(href='#contact',title='') Contact
+      section(id='about')
+        p.
+          My name is Andrew. My passion is building standards-based web applications. If
+          you're interested in working with me, you can <a href="#contact" title="Contact Andrew P. Kostka">contact me</a> or take a look at <a href="#projects" title="Andrew P. Kostka's projects">my projects</a>.
+      section(id='projects')
+        h1 Here's what I've been working on.
+        article
+          h2 Benchmark Marketplace
+          div(class='desc')
+            p.
+              A site that showcases both free and paid resources for small businesses. I was involved in all aspects of development: design, user experience, development, server setup.
+            h3 Features
+            ul
+              li Custom Wordpress Theme
+              li Friendly, functional design
+              li Custom AJAX-powered sorting function
+            a(href="http://marketplace.benchmarkemail.com") View the Benchmark Marketplace
+          img(src="/img/bmarketplace.png",alt="Benchmark Marketplace",title="Benchmark Marketplace")
